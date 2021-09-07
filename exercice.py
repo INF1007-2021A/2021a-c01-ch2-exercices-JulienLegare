@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
-    return mot
-
+    mot2=""
+    for lettre in mot:
+        num=ord(lettre)
+        num-=32
+        mot2=mot2+chr(num)
+    return mot2
 
 if __name__ == '__main__':
     mots = [
